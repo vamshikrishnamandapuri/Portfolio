@@ -3,174 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vamshi Krishna — Portfolio</title>
+  <title>Vamshi Krishna — Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {margin: 0; padding: 0; box-sizing: border-box;}
-    body {font-family: 'Inter', sans-serif; color: #111827; background: #fff; line-height: 1.6;}
-    a {text-decoration: none; color: inherit;}
-
-    /* Navbar */
-    nav {display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #f9fafb; position: sticky; top: 0; z-index: 10;}
-    nav .logo {font-size: 1.5rem; font-weight: bold; color: #2563eb;}
-    nav ul {list-style: none; display: flex; gap: 1.5rem;}
-    nav a {color: #111827; font-weight: 500;}
-    nav a:hover {color: #2563eb;}
-
-    /* Hero */
-    .hero {display: flex; flex-wrap: wrap; align-items: center; max-width: 1200px; margin: auto; padding: 2rem;}
-    .hero-image {flex: 1 1 300px; text-align: center;}
-    .hero-image img {width: 100%; max-width: 350px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);}
-    .hero-text {flex: 1 1 400px; padding: 1rem 2rem;}
-    .hero-text h1 {font-size: 2.5rem; margin-bottom: 1rem;}
-    .hero-text p {margin-bottom: 1.5rem; color: #374151;}
-    .buttons {display: flex; gap: 1rem;}
-    .btn {padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; border: 2px solid #2563eb; transition: all 0.3s ease;}
-    .btn.primary {background: #2563eb; color: white;}
-    .btn.primary:hover {background: #1e3a8a; border-color: #1e3a8a;}
-    .btn:hover {background: #2563eb; color: white;}
-
-    /* Sections */
-    section {max-width: 1100px; margin: 40px auto; padding: 0 20px;}
-    h2 {font-size: 1.8rem; margin-bottom: 20px; text-align: center; color: #1e40af;}
-    .card {background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 24px; transition: transform 0.2s ease, box-shadow 0.2s ease;}
-    .card:hover {transform: translateY(-4px); box-shadow: 0 8px 12px rgba(0,0,0,0.08);}
-    .card h3 {font-size: 1.4rem; margin-bottom: 8px; color: #1e3a8a;}
-    ul {margin-top: 10px; padding-left: 20px;}
-    ul li {margin-bottom: 6px; color: #374151;}
-
-    /* Footer */
-    footer {background: #f9fafb; color: #374151; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px;}
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Navbar -->
   <nav>
     <div class="logo">VK</div>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#summary">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero" id="home">
+  <section class="hero">
     <div class="hero-image">
       <img src="vamshiimage.jpg" alt="Vamshi Krishna">
     </div>
     <div class="hero-text">
       <h1>Turning Vision Into Reality With Code And Design.</h1>
-      <p>AI / ML Engineer | <a href="https://github.com/vamshikrishnamandapuri" target="_blank">GitHub</a> | 
-         <a href="https://www.linkedin.com/in/vamshikrishna-mandapuri-83863716b" target="_blank">LinkedIn</a><br>
-         +91 9505354437 | mandapurivamshikrishna@gmail.com | India</p>
+      <p>AI/ML Engineer | <a href="https://github.com/vamshikrishnamandapuri" target="_blank">GitHub</a> | 
+         <a href="https://www.linkedin.com/in/vamshikrishna-mandapuri-83863716b" target="_blank">LinkedIn</a></p>
       <div class="buttons">
         <a href="resume.pdf" class="btn primary" target="_blank">Resume</a>
-        <a href="#contact" class="btn">Contact</a>
+        <a href="contact.html" class="btn">Contact</a>
       </div>
     </div>
   </section>
 
-  <!-- Professional Summary -->
-  <section id="summary">
-    <h2>Professional Summary</h2>
-    <div class="card">
-      <p>AI/ML Engineer with professional experience in Python development, machine learning, API integration, and database administration. Skilled in building AI-powered automation platforms, intelligent mobile applications, and data-driven dashboards. Strong knowledge of Google Cloud Platform (GCP) and Supabase for scalable solutions. Experienced in leading teams, optimizing system performance, and delivering measurable business results.</p>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="card">
-      <p><strong>Languages:</strong> Python, SQL, JavaScript</p>
-      <p><strong>Machine Learning:</strong> NLP, Predictive Modeling, Clustering, Feature Engineering, Scikit-learn</p>
-      <p><strong>Frameworks & Tools:</strong> Flask, FastAPI, React Native (Expo), Selenium, BeautifulSoup, Power BI</p>
-      <p><strong>APIs:</strong> Google Maps API, Google Places API, Gmail API, Calendar API, Gemini AI API, REST APIs, OAuth 2.0</p>
-      <p><strong>Cloud & Database:</strong> Google Cloud Platform, Supabase, PostgreSQL, MySQL</p>
-      <p><strong>Data Processing:</strong> Regex, Fuzzy Matching, ETL, Data Cleaning, Normalization</p>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience">
-    <h2>Work Experience</h2>
-    <div class="card">
-      <h3>AI/ML Engineer (Team Lead) — IITLABS (Innosoul Inc.)</h3>
-      <p><em>Nov 2023 – Present</em></p>
-      <ul>
-        <li>Led RFP automation platform, reducing processing time by 30% and improving classification accuracy by 20%.</li>
-        <li>Administered GCP databases, migrated infrastructure to Supabase, and optimized schemas for query efficiency.</li>
-        <li>Integrated Gmail/Calendar APIs and implemented secure API access via OAuth 2.0.</li>
-        <li>Developed mobile location-based reminder app with AI-powered categorization and geofencing notifications.</li>
-        <li>Contributed to HR dashboard development with secure APIs and automated recruiter notifications.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Python Developer (Intern) — JT Wisdom Technology Pvt Ltd</h3>
-      <p><em>Dec 2022 – Mar 2023</em></p>
-      <ul>
-        <li>Automated healthcare processes with Selenium and BeautifulSoup, reducing manual workload by 20%.</li>
-        <li>Enhanced ETL and preprocessing pipelines for improved analytics accuracy.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>RFP Dashboard & Automation</h3>
-      <p><strong>Tech & APIs:</strong> Python, Flask, FastAPI, Gmail API, Calendar API, Supabase, PostgreSQL, Regex, NLP, Scikit-learn, Pandas, NumPy, OAuth 2.0</p>
-      <ul>
-        <li>Designed and deployed an AI-driven automation platform to extract, classify, and visualize RFP opportunities from 10,000+ unstructured emails.</li>
-        <li>Developed advanced regex parsers and NLP pipelines achieving 95% extraction accuracy.</li>
-        <li>Implemented fuzzy matching algorithms to cross-reference project details, reducing unclassified entries by 20%.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Location-Based Reminder Application</h3>
-      <p><strong>Tech & APIs:</strong> React Native (Expo), Google Maps API, Google Places API, Gemini AI API, Supabase</p>
-      <ul>
-        <li>Architected a mobile app enabling AI-based reminders triggered by geofence entry and real-time location updates.</li>
-        <li>Integrated Google Places API for precise location search and mapping capabilities.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>HR Dashboard</h3>
-      <p><strong>Tech & APIs:</strong> Python, Flask, REST API, OAuth 2.0, Supabase</p>
-      <ul>
-        <li>Engineered a recruiter-facing dashboard for real-time tracking of resume submissions matched to job descriptions.</li>
-        <li>Automated email notifications to recruiters, reducing turnaround times.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Certifications -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <div class="card">
-      <p>Power BI Developer — Mahendar Academy Pro (Mar 2024 – May 2024)</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:mandapurivamshikrishna@gmail.com">mandapurivamshikrishna@gmail.com</a></p>
-      <p>Phone: +91 9505354437</p>
-      <p>Location: India</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
     © 2025 Vamshi Krishna Mandapuri — AI/ML Engineer. All rights reserved.
   </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
