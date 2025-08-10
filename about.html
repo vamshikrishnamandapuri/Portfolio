@@ -1,40 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>About — Vamshi Krishna</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">VK</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section>
-    <h2>Professional Summary</h2>
-    <div class="card">
-      <p>AI/ML Engineer with professional experience in Python development, machine learning, API integration, and database administration...</p>
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="logo">VK</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="socials">
+        <a href="https://github.com/vamshikrishnamandapuri" target="_blank" aria-label="GitHub">GitHub</a>
+      </div>
     </div>
-    <h2>Technical Skills</h2>
-    <div class="card">
-      <p><strong>Languages:</strong> Python, SQL, JavaScript</p>
-      <p><strong>Machine Learning:</strong> NLP, Predictive Modeling, Clustering, Feature Engineering, Scikit-learn</p>
-      <p><strong>Frameworks & Tools:</strong> Flask, FastAPI, React Native (Expo), Selenium, BeautifulSoup, Power BI</p>
-      <p><strong>APIs:</strong> Google Maps API, Google Places API, Gmail API, Calendar API, Gemini AI API, REST APIs, OAuth 2.0</p>
-      <p><strong>Cloud & Database:</strong> Google Cloud Platform, Supabase, PostgreSQL, MySQL</p>
-    </div>
-  </section>
+  </header>
 
-  <footer>
-    © 2025 Vamshi Krishna Mandapuri — AI/ML Engineer. All rights reserved.
+  <main>
+    <section class="section">
+      <div class="grid-2">
+        <div class="card fade-up">
+          <h3>Professional Summary</h3>
+          <p>AI/ML Engineer experienced in building production-grade ML systems, API integrations, and cloud-backed applications. Led efforts on RFP automation, geofencing mobile services, and HR analytics tools. Skilled in driving cross-functional projects from prototype to production.</p>
+          <ul style="margin-top:12px;color:var(--muted)">
+            <li>Team lead experience on AI automation projects</li>
+            <li>Data engineering & model deployment on GCP and Supabase</li>
+            <li>End-to-end product thinking & performance optimization</li>
+          </ul>
+        </div>
+
+        <div class="card fade-up">
+          <h3>Experience</h3>
+          <p><strong>AI/ML Engineer (Team Lead) — IITLABS (Innosoul Inc.)</strong><br><em>Nov 2023 – Present</em>
+            <ul style="margin-top:8px;color:var(--muted)">
+              <li>Built RFP automation & dashboard reducing manual time by 30%.</li>
+              <li>Migrated infra to Supabase and optimized DB schemas.</li>
+              <li>Integrated Gmail/Calendar APIs with secure OAuth flows.</li>
+            </ul>
+          </p>
+
+          <p style="margin-top:12px"><strong>Python Developer (Intern) — JT Wisdom Technology</strong><br><em>Dec 2022 – Mar 2023</em>
+            <ul style="margin-top:8px;color:var(--muted)">
+              <li>Automated healthcare scraping and ETL pipelines.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 style="text-align:left">Certifications & Education</h2>
+      <div class="grid-2">
+        <div class="card fade-up">
+          <h3>Certifications</h3>
+          <p>Power BI Developer — Mahendar Academy Pro (Mar 2024 – May 2024)</p>
+        </div>
+        <div class="card fade-up">
+          <h3>Education</h3>
+          <p>Relevant coursework / degree details can be added here.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2025 Vamshi Krishna Mandapuri — AI/ML Engineer.
   </footer>
   <script src="script.js"></script>
 </body>
