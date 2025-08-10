@@ -1,34 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact — Vamshi Krishna</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">VK</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section>
-    <h2>Contact Me</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:mandapurivamshikrishna@gmail.com">mandapurivamshikrishna@gmail.com</a></p>
-      <p>Phone: +91 9505354437</p>
-      <p>Location: India</p>
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="logo">VK</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="socials">
+        <a href="mailto:mandapurivamshikrishna@gmail.com">Email</a>
+      </div>
     </div>
-  </section>
+  </header>
 
-  <footer>
-    © 2025 Vamshi Krishna Mandapuri — AI/ML Engineer. All rights reserved.
+  <main>
+    <section class="section">
+      <div class="grid-2">
+        <div class="card fade-up">
+          <h3>Contact Me</h3>
+          <p>Email: <a href="mailto:mandapurivamshikrishna@gmail.com">mandapurivamshikrishna@gmail.com</a></p>
+          <p>Phone: +91 9505354437</p>
+          <p>Location: India</p>
+          <p style="margin-top:12px"><a href="resume.pdf" class="btn btn-primary" target="_blank">Download Resume</a></p>
+        </div>
+
+        <div class="card fade-up">
+          <h3>Send a message</h3>
+          <!-- plain HTML form; to make it functional add form handling service or server -->
+          <form action="mailto:mandapurivamshikrishna@gmail.com" method="post" enctype="text/plain">
+            <div style="margin-bottom:10px"><input class="input" type="text" name="name" placeholder="Your name" required></div>
+            <div style="margin-bottom:10px"><input class="input" type="email" name="email" placeholder="Email" required></div>
+            <div style="margin-bottom:10px"><textarea name="message" placeholder="Message" required></textarea></div>
+            <div><button class="btn btn-primary" type="submit">Send</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2025 Vamshi Krishna Mandapuri — AI/ML Engineer.
   </footer>
   <script src="script.js"></script>
 </body>
